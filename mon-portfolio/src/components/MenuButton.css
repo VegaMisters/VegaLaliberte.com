@@ -1,0 +1,63 @@
+.card-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #2a2a2a;
+  transition: transform 0.4s ease;
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(0.5);
+  transition: all 0.5s ease;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
+}
+
+.card-title {
+  color: white;
+  margin: 0;
+  font-family: 'Alien Playlist'; 
+  font-size: 2.4rem; 
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.card-line {
+  width: 0;
+  height: 3px;
+  background: white;
+  margin-top: 10px;
+  transition: width 0.4s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+}
+
+.card-container:hover .card-bg {
+  filter: grayscale(0%) brightness(0.8);
+  transform: scale(1.05);
+}
+
+.card-container:hover .card-line {
+  width: 40px;
+}
