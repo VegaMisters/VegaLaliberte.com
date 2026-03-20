@@ -36,6 +36,9 @@ function PhotoGallery() {
     { 
       src: '/images/photo/8.jpg',
       titre: 'Alien night'
+    },
+    { 
+      src: '/images/photo/9.jpg'
     }
   ];
 
