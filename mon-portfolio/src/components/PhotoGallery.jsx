@@ -38,6 +38,10 @@ function PhotoGallery() {
       titre: 'Alien night'
     },
     { 
+      src: '/images/photo/10.png',
+      titre: 'Alien night hidden population'
+    },
+    { 
       src: '/images/photo/9.jpg'
     }
   ];
