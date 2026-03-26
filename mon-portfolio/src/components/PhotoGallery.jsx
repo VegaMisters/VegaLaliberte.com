@@ -59,7 +59,24 @@ function PhotoGallery() {
     },
     { 
       src: '/images/photo/13.jpg'
-    }
+    },
+    { 
+      src: '/images/photo/18.jpg'
+    },
+    { 
+      src: '/images/photo/19.jpg'
+    },
+    { 
+      src: '/images/photo/20.jpg'
+    },
+    { 
+      src: '/images/photo/16.jpg'
+    },
+    { 
+      src: '/images/photo/17.jpg'
+    },
+    
+    
   ];
 
   return (
