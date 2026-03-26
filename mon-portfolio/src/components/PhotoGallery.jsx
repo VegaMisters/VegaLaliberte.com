@@ -8,72 +8,72 @@ function PhotoGallery() {
 
   const photos = [
     { 
-      src: '/images/photo/1.jpg', 
+      src: '/images/photo/1.webp', 
       titre: 'CONVERSE'
     },
     { 
-      src: '/images/photo/2.jpg',
+      src: '/images/photo/2.webp',
       titre: 'Orangina'
     },
     { 
-      src: '/images/photo/14.jpg'
+      src: '/images/photo/14.webp'
     },
     { 
-      src: '/images/photo/3.jpg', 
+      src: '/images/photo/3.webp', 
       titre: 'A regular summer night in 2015' 
     },
     { 
-      src: '/images/photo/6.jpg',
+      src: '/images/photo/6.webp',
       titre: 'A regular summer night in 2015'
     },
     { 
-      src: '/images/photo/15.jpg'
+      src: '/images/photo/15.webp'
     },
     { 
-      src: '/images/photo/4.jpg'
+      src: '/images/photo/4.webp'
     },
     { 
-      src: '/images/photo/5.jpg'
+      src: '/images/photo/5.webp'
     },
     { 
-      src: '/images/photo/7.jpg', 
+      src: '/images/photo/7.webp', 
       titre: 'Le croisement au-dessus'
     },
     { 
-      src: '/images/photo/8.jpg',
+      src: '/images/photo/8.webp',
       titre: 'Alien night'
     },
     { 
-      src: '/images/photo/10.png',
+      src: '/images/photo/10.webp',
       titre: 'Alien night hidden population'
     },
     { 
-      src: '/images/photo/9.jpg'
+      src: '/images/photo/9.webp'
     },
     { 
-      src: '/images/photo/11.jpg'
+      src: '/images/photo/11.webp'
     },
     { 
-      src: '/images/photo/12.jpg',
+      src: '/images/photo/12.webp',
       titre: 'La Bataille du ciel'
     },
     { 
-      src: '/images/photo/13.jpg'
+      src: '/images/photo/13.webp'
     },
     { 
-      src: '/images/photo/18.jpg'
+      src: '/images/photo/18.webp'
     },
     { 
-      src: '/images/photo/19.jpg'
+      src: '/images/photo/20.webp'
     },
     { 
-      src: '/images/photo/20.jpg'
+      src: '/images/photo/19.webp'
     },
     { 
-      src: '/images/photo/16.jpg'
+      src: '/images/photo/16.webp'
     },
     { 
-      src: '/images/photo/17.jpg'
+      src: '/images/photo/17.webp'
     },
     
     
