@@ -7,76 +7,26 @@ function PhotoGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   const photos = [
-    { 
-      src: '/images/photo/1.webp', 
-      titre: 'CONVERSE'
-    },
-    { 
-      src: '/images/photo/2.webp',
-      titre: 'Orangina'
-    },
-    { 
-      src: '/images/photo/14.webp'
-    },
-    { 
-      src: '/images/photo/3.webp', 
-      titre: 'A regular summer night in 2015' 
-    },
-    { 
-      src: '/images/photo/6.webp',
-      titre: 'A regular summer night in 2015'
-    },
-    { 
-      src: '/images/photo/15.webp'
-    },
-    { 
-      src: '/images/photo/4.webp'
-    },
-    { 
-      src: '/images/photo/5.webp'
-    },
-    { 
-      src: '/images/photo/7.webp', 
-      titre: 'Le croisement au-dessus'
-    },
-    { 
-      src: '/images/photo/8.webp',
-      titre: 'Alien night'
-    },
-    { 
-      src: '/images/photo/10.webp',
-      titre: 'Alien night hidden population'
-    },
-    { 
-      src: '/images/photo/9.webp'
-    },
-    { 
-      src: '/images/photo/11.webp'
-    },
-    { 
-      src: '/images/photo/12.webp',
-      titre: 'La Bataille du ciel'
-    },
-    { 
-      src: '/images/photo/13.webp'
-    },
-    { 
-      src: '/images/photo/18.webp'
-    },
-    { 
-      src: '/images/photo/20.webp'
-    },
-    { 
-      src: '/images/photo/19.webp'
-    },
-    { 
-      src: '/images/photo/16.webp'
-    },
-    { 
-      src: '/images/photo/17.webp'
-    },
-    
-    
+    { src: '/images/photo/1.webp', thumb: '/images/thumbs/1.webp', titre: 'CONVERSE' },
+    { src: '/images/photo/2.webp', thumb: '/images/thumbs/2.webp', titre: 'Orangina' },
+    { src: '/images/photo/14.webp', thumb: '/images/thumbs/14.webp' },
+    { src: '/images/photo/3.webp', thumb: '/images/thumbs/3.webp', titre: 'A regular summer night in 2015' },
+    { src: '/images/photo/6.webp', thumb: '/images/thumbs/6.webp', titre: 'A regular summer night in 2015' },
+    { src: '/images/photo/15.webp', thumb: '/images/thumbs/15.webp' },
+    { src: '/images/photo/4.webp', thumb: '/images/thumbs/4.webp' },
+    { src: '/images/photo/5.webp', thumb: '/images/thumbs/5.webp' },
+    { src: '/images/photo/7.webp', thumb: '/images/thumbs/7.webp', titre: 'Le croisement au-dessus' },
+    { src: '/images/photo/8.webp', thumb: '/images/thumbs/8.webp', titre: 'Alien night' },
+    { src: '/images/photo/10.webp', thumb: '/images/thumbs/10.webp', titre: 'Alien night hidden population' },
+    { src: '/images/photo/9.webp', thumb: '/images/thumbs/9.webp' },
+    { src: '/images/photo/11.webp', thumb: '/images/thumbs/11.webp' },
+    { src: '/images/photo/12.webp', thumb: '/images/thumbs/12.webp', titre: 'La Bataille du ciel' },
+    { src: '/images/photo/13.webp', thumb: '/images/thumbs/13.webp' },
+    { src: '/images/photo/18.webp', thumb: '/images/thumbs/18.webp' },
+    { src: '/images/photo/20.webp', thumb: '/images/thumbs/20.webp' },
+    { src: '/images/photo/19.webp', thumb: '/images/thumbs/19.webp' },
+    { src: '/images/photo/16.webp', thumb: '/images/thumbs/16.webp' },
+    { src: '/images/photo/17.webp', thumb: '/images/thumbs/17.webp' }
   ];
 
   return (
@@ -88,8 +38,10 @@ function PhotoGallery() {
           {photos.map((photo, index) => (
             <img 
               key={index} 
-              src={photo.src} 
+              src={photo.thumb} // Affiche la petite image légère dans la grille
               alt="" 
+              loading="lazy"
+              decoding="async"
               onClick={() => setSelectedPhoto(photo)} 
             />
           ))}
@@ -107,7 +59,11 @@ function PhotoGallery() {
             }}
           >
             <div className="lightbox-media">
-              <img src={selectedPhoto.src} alt="" />
+              <img 
+                src={selectedPhoto.src} // Affiche l'image haute définition au clic
+                alt="" 
+                fetchpriority="high"
+              />
             </div>
 
             {selectedPhoto.description && (
