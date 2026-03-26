@@ -16,18 +16,24 @@ function PhotoGallery() {
       titre: 'Orangina'
     },
     { 
+      src: '/images/photo/14.jpg'
+    },
+    { 
       src: '/images/photo/3.jpg', 
       titre: 'A regular summer night in 2015' 
+    },
+    { 
+      src: '/images/photo/6.jpg',
+      titre: 'A regular summer night in 2015'
+    },
+    { 
+      src: '/images/photo/15.jpg'
     },
     { 
       src: '/images/photo/4.jpg'
     },
     { 
       src: '/images/photo/5.jpg'
-    },
-    { 
-      src: '/images/photo/6.jpg',
-      titre: 'A regular summer night in 2015'
     },
     { 
       src: '/images/photo/7.jpg', 
@@ -43,6 +49,16 @@ function PhotoGallery() {
     },
     { 
       src: '/images/photo/9.jpg'
+    },
+    { 
+      src: '/images/photo/11.jpg'
+    },
+    { 
+      src: '/images/photo/12.jpg',
+      titre: 'La Bataille du ciel'
+    },
+    { 
+      src: '/images/photo/13.jpg'
     }
   ];
 
